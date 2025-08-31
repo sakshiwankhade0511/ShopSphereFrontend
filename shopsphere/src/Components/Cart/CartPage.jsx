@@ -1,4 +1,5 @@
 import React, {memo, useContext, useMemo } from "react";
+import config from "../../config.json"
 import "./CartPage.css"
 import Table from "../Common/Table";
 import Quantity from "../SingleProductPage/Quantity";
@@ -35,7 +36,7 @@ const CartPage = () => {
     return(
         <div className="align_center cartPage">
             <div className="align_center userInfo">
-                <img src={`http://localhost:5000/profile/${user?.profilePic}`} alt="user"/>
+                <img src={`${config.backendURL}/profile/${user?.profilePic}`} alt="user"/>
                 <div>
                     <p className="userName">Name : {user?.name}</p>
                     <div className="userEmail">Email : {user?.email}</div>

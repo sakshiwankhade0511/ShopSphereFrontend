@@ -1,4 +1,5 @@
 import React, { memo, useContext, useState } from "react";
+import config from "../../config.json"
 import "./SingleProductPage.css"
 import Quantity from "./Quantity";
 import { useParams } from "react-router-dom";
@@ -24,7 +25,7 @@ const SingleProductPage = () => {
                         product.images && product.images.map((image, index) => (
                             <img 
                                 key={index}
-                                src={`http://localhost:5000/products/${image}`} 
+                                src={`${config.backendURL}/products/${image}`} 
                                 alt={product.title} 
                                 onClick={() => setSelectImage(index)}
                                 className={selectImage === index ? "selectedImage" : ""} 
@@ -36,7 +37,7 @@ const SingleProductPage = () => {
 
                 {product.images && product.images.length > 0 && (
                     <img 
-                        src={`http://localhost:5000/products/${product.images[selectImage]}`} 
+                        src={`${config.backendURL}/products/${product.images[selectImage]}`} 
                         alt={product.title} 
                         className="singleProductImage"
                     />

@@ -1,4 +1,5 @@
 import React, { memo, useContext } from "react";
+import config from "../../config.json"
 import { NavLink } from 'react-router-dom'
 import "./ProductCard.css"
 import iphone from "../../assets/Apple.jpg"
@@ -14,7 +15,7 @@ const ProductCard = ({product}) => {
         <div className="productCard">
             <div className="productImage">
                 <NavLink to={`/product/${product?._id}`}>
-                <img src={`http://localhost:5000/products/${product?.images[0]}`} alt="#" /></NavLink>
+                <img src={`${config.backendURL}/${product?.images[0]}`} alt="#" /></NavLink>
             </div>
 
             <div className="productsDetails">
