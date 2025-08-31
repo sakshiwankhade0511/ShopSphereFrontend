@@ -1,0 +1,62 @@
+.cartPage {
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 32px 48px;
+}
+
+.userInfo {
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.userInfo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.userName {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.cartBill {
+    align-self: flex-end;
+    width: 400px;
+    background-color: #fff;
+}
+
+.cartBill td {
+    padding: 12px 20px;
+    border: 3px solid #e5e5e5;
+}
+
+.cartBill td:last-child {
+    text-align: end;
+    width: 120px;
+}
+
+.cartBillFinal {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.checkoutButton {
+    align-self: flex-end;
+    height: 38px !important;
+    margin: 16px 0;
+    padding: 0 16px !important;
+}
+
+.quantityTableInput {
+    height: 50px;
+    justify-content: center;
+}
+
+.removeIcon{
+    height: 30px;
+    width: 30px;
+}

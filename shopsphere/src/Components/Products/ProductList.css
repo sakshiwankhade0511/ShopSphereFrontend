@@ -1,0 +1,35 @@
+.productListSection {
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.productListHeader {
+    justify-content: space-between;
+}
+
+.productListHeader h2 {
+    font-size: 26px;
+}
+
+.productsSorting {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: inherit;
+    height: 35px;
+    padding: 0  5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.productsList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.formErrors {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}

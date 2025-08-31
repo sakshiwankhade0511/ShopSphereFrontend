@@ -1,0 +1,92 @@
+.navbar{
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: #fff;
+}
+
+.navbarHeading{
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.navbarForm{
+    width: 400px;
+    height: 40px;
+    border: 1px solid #cdcdcd;
+    padding: 3px;
+    border-radius: 10px;    
+    position: relative;
+}
+
+.navbarSearch{
+    flex: 1;
+    height: 100%;
+    padding: 0 7px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.searchButton{
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(127, 22, 175);
+    color: #fff;
+    cursor: pointer;
+}
+
+.searchResult {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.searchResultLink {
+    display: flex;
+}
+
+.searchResultLink > a {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.searchResultLink:hover,
+.searchResultLink.active {
+    background-color: #e3e3e3;
+}
+
+.searchButton:hover{
+    background-color: rgb(103, 15, 144);
+}
+
+.navbarLinks{
+    font-size: 19px;
+}
+
+.cartCounts{
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(127, 22, 175);
+    color: #fff;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.navbarLinks > a.active {
+    font-weight: 600;
+}

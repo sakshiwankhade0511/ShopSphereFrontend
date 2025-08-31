@@ -1,0 +1,26 @@
+.quantityInput {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 16px;
+}
+
+.quantityInputButton {
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    background-color: #e8702f;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.quantityInputButton:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.quantityInputCount{
+    margin: 0 40px;
+    text-align: center;
+}
